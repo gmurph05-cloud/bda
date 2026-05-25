@@ -33,6 +33,8 @@ You can also pull updates from the original repository (upstream) when new mater
   Capstone activity instructions and link to the capstone repository.
 - [Session 6 README](./session6/README.md)  
   Mutexes, semaphores, controlled concurrency, and an optional parallel printer simulation project.
+- [Session 7 README](./session7/README.md)  
+  Introduction to pandas, data cleaning basics, NumPy arrays, and pandas homework practice.
 
 ## Notes
 

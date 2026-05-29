@@ -179,6 +179,8 @@ Include a short README explaining time and space complexity. You should explain 
 
 ## 9. Deliverables
 
+Before submitting, read the [Team Project Submission Guide](./SUBMISSION_GUIDE.md).
+
 Submit:
 
 1. A GitHub repository with runnable code.
@@ -193,7 +195,7 @@ Submit:
 6. A team presentation video.
 7. An individual peer evaluation form from each team member.
 
-Share your team repository with Stelios on GitHub. The GitHub handle is: `steliosot`.
+Share your private team repository with Stelios using the details in the submission guide.
 
 ## 10. Video Guidance
 

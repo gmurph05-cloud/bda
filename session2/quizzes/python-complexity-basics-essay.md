@@ -31,9 +31,9 @@ Think about how many elements may need to be checked as `n` grows.
 - We expect a brief explanation (e.g. repeated pairwise comparisons across the list).
 
 ## Reference Answer
-A) `O(n)` for searching in an unsorted list.
-B) `O(log n)` for binary search on sorted data.
-C) Bubble sort is `O(n^2)` on average and worst case.
+A) Searching an unsorted list is `O(n)` because in the worst case the algorithm may need to check every element once.
+B) Binary search is `O(log n)` on a sorted list because each comparison halves the remaining search space.
+C) Bubble sort is `O(n^2)` on average and in the worst case because it repeatedly makes pairwise comparisons across the list.
 
 ## AI Evaluation Rules
 Grade only by criteria above. Do not use external assumptions.

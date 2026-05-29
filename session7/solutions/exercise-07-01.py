@@ -1,8 +1,8 @@
 import pandas as pd
 
-# movies = pd.read_json("datasets/Movies.json")
+movies = pd.read_json("datasets/Movies.json")
 
-# print(movies)
+print(movies)
 
 # 5. Inspect the first and last rows
 # print(movies.head(8))
@@ -99,7 +99,7 @@ Tasks:
 
 # 1. Load datasets/Movies.json into a DataFrame called movies.
 print("\n1. Load datasets/Movies.json into a DataFrame called movies.\n")
-movies_exercise = pd.read_json("..\datasets\Movies.json")
+movies_exercise = pd.read_json("datasets\Movies.json")
 
 # 2. Print the first 5 rows, the last 3 rows, and the number of rows and columns.
 print("\n2. Print the first 5 rows, the last 3 rows, and the number of rows and columns.\n")

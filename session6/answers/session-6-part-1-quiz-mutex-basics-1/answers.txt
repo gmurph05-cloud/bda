@@ -1,0 +1,92 @@
+Quiz: Session 6 Part 1 Quiz (Mutex Basics)
+Score: 10/10
+
+Question 1
+What is a mutex mainly used for?
+Selected: 2. Allowing only one worker into a critical section
+Correct: 2. Allowing only one worker into a critical section
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: A mutex protects shared resources by allowing one worker at a time into the protected code.
+
+Question 2
+In Python, which object is commonly used as a mutex in this session?
+Selected: 4. `threading.Lock`
+Correct: 4. `threading.Lock`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `threading.Lock` is used to protect critical sections.
+
+Question 3
+What is a critical section?
+Selected: 3. Code that must be protected because it uses shared state
+Correct: 3. Code that must be protected because it uses shared state
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Critical sections are parts of code where shared resources are accessed and need coordination.
+
+Question 4
+Why should multiple threads writing to one file be coordinated?
+Selected: 2. Output can become mixed, lost, or difficult to trust
+Correct: 2. Output can become mixed, lost, or difficult to trust
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Uncoordinated writes can cause confusing or incorrect output.
+
+Question 5
+What does `with lock:` do?
+Selected: 1. Enters a protected block and releases the lock when done
+Correct: 1. Enters a protected block and releases the lock when done
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The context manager acquires the lock, runs the block, and releases the lock.
+
+Question 6
+Why is the shared counter example protected by a lock?
+Selected: 4. Reading and updating the counter should happen as one safe operation
+Correct: 4. Reading and updating the counter should happen as one safe operation
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: The read-update-write sequence should not be interrupted by another worker.
+
+Question 7
+What does `Faker` help with in Exercise 1?
+Selected: 3. Generating fake sentences for practice
+Correct: 3. Generating fake sentences for practice
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `Faker` generates fake text so the exercise can focus on safe file writing.
+
+Question 8
+Which line generates a short fake sentence?
+Selected: 1. `fake.sentence(nb_words=6)`
+Correct: 1. `fake.sentence(nb_words=6)`
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: `fake.sentence(nb_words=6)` asks Faker for a short fake sentence.
+
+Question 9
+In the phrase exercise, what should be inside the lock-protected block?
+Selected: 4. Only the shared file-writing section
+Correct: 4. Only the shared file-writing section
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Keep the critical section small and protect the shared file write.
+
+Question 10
+What is a race condition?
+Selected: 2. A bug caused by unpredictable timing between workers
+Correct: 2. A bug caused by unpredictable timing between workers
+Imposters flagged: -
+Expected imposters: -
+Result: Correct
+Explanation: Race conditions happen when worker timing affects shared-state behavior.

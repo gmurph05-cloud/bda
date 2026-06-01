@@ -15,6 +15,7 @@
 # Virtual environments
 .venv/
 venv/
+.venv_homework
 
 # Local env/config
 .env

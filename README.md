@@ -35,6 +35,8 @@ You can also pull updates from the original repository (upstream) when new mater
   Mutexes, semaphores, controlled concurrency, and an optional parallel printer simulation project.
 - [Session 7 README](./session7/README.md)  
   Introduction to pandas, data cleaning basics, NumPy arrays, and pandas homework practice.
+- [Session 8 README](./session8/README.md)  
+  Introduction to Apache Spark with PySpark, Google Colab practice, Spark SQL analytics, and optional local Spark setup.
 
 ## Notes
 

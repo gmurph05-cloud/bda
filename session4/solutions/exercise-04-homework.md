@@ -197,5 +197,5 @@ if __name__ == "__main__":
 #### 7. Write a short reflection on what you would do differently in an interview next time.
 
 - **Ask Proactive Clarifying Questions Early:** Before writing a single line of code, explicitly ask about properties of the data (e.g., Is it sorted? Are there negative numbers or floating points? How should empty inputs or non-existent pairs be treated?).
-- **Think Out Loud Constantly:** Verbalize the thought process—including the flaws of a brute-force approach. Saying _"This is an $$O(N^2)$$ approach which isn't efficient, let's see how we can optimize it"_ allows the interviewer to see my analytical progression and offer course-correcting hints if I stall.
+- **Think Out Loud Constantly:** Verbalize the thought process—including the flaws of a brute-force approach. Saying _"This is an O(N^2) approach which isn't efficient, let's see how we can optimize it"_ allows the interviewer to see my analytical progression and offer course-correcting hints if I stall.
 - **Trace Code with Test Cases Manually:** Once the code is written, do not just say _"I'm done."_ Instead, construct a dry-run matrix or trace example blocks step-by-step through the loops to verify index behaviors, variable updates, and edge cases. This demonstrates the need for quality assurance and testing code as you progress.

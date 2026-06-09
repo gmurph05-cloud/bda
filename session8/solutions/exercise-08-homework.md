@@ -89,7 +89,7 @@ Each row records a **discrete telemetry event or action** taken by a user inside
 What column did you add, and how did you calculate it?
 
 ```python
-df_orders = df_orders.withColumn("revenue", col("quantity") \* col("unit_price"))
+df_orders = df_orders.withColumn("revenue", col("quantity") * col("unit_price"))
 df_orders.show()
 ```
 

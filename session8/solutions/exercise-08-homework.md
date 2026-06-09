@@ -133,7 +133,7 @@ spark.sql("""
 Explain 2 interesting results in plain English.
 
 1. Regional Revenue and Order Volume
-   The final aggregation query provides a clear picture of which locations are driving your business. By grouping data by city, this query surfaces your top-performing markets.
+   The final aggregation query provides a clear picture of which locations are driving business. By grouping data by city, this query surfaces top-performing markets.
 
 ```python
    spark.sql("""

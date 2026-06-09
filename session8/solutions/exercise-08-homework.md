@@ -147,6 +147,19 @@ Explain 2 interesting results in plain English.
 """).show()
 ```
 
+```txt
++-----------+-----------+-------------+
+|       city|order_count|total_revenue|
++-----------+-----------+-------------+
+|     London|          4|      1742.48|
+|       Rhye|          3|       179.97|
+|   Plymouth|          2|        61.74|
+| Manchester|          2|        54.49|
+|Bournemouth|          1|         29.0|
++-----------+-----------+-------------+
+
+```
+
 2. High-Value vs. Low-Value Customer Segments
    The second and third queries create a stark contrast by filtering data based on price thresholds versus geographic boundaries.
 

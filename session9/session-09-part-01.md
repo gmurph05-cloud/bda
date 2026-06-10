@@ -11,7 +11,6 @@ You will:
 - inspect schema, rows, columns, and row count
 - register a temporary SQL view
 - run first Spark SQL checks
-- connect the pattern to the final project Spark task
 
 #### 2. Prerequisites
 
@@ -38,7 +37,7 @@ session-09-part-01-service-events
 - `header=True` tells Spark that the first CSV row contains column names.
 - `TimestampType` stores date and time values.
 - `createOrReplaceTempView` gives a DataFrame a SQL table name for the current Spark session.
-- This session uses service logs. In the final project, the same ideas apply to market data.
+- This session uses service logs from `service_events.csv`.
 
 Checkpoint question:
 
@@ -236,22 +235,7 @@ Minimum completion checklist:
 4. At least three SQL checks run.
 5. Spark is stopped at the end.
 
-#### 10. Final project connection
-
-In the final project, Team 3 starts by loading:
-
-```txt
-data/clean/cleaned_market_data.csv
-```
-
-The same pattern applies:
-
-1. load the cleaned CSV with Spark
-2. inspect schema, rows, and columns
-3. register a temporary SQL view
-4. run a small test query before deeper analytics
-
-#### 11. Quiz
+#### 10. Quiz
 
 ```bash
 quizmd quizzes/python-session-09-part-01-quiz.md

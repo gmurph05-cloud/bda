@@ -4,12 +4,12 @@
 
 Which method adds or replaces a Spark DataFrame column?
 
-- `withColumn`
 - `makeColumn`
+- `withColumn`
 - `add_cell`
 - `installColumn`
 
-Answer: 1
+Answer: 2
 Type: single
 Time: 40
 Explanation: `withColumn` returns a DataFrame with the new or replaced column.
@@ -18,12 +18,12 @@ Explanation: `withColumn` returns a DataFrame with the new or replaced column.
 
 Which expression calculates `total_bytes`?
 
-- `bytes_in + bytes_out`
 - `service + region`
 - `event_time / service`
+- `bytes_in + bytes_out`
 - `latency_ms - service`
 
-Answer: 1
+Answer: 3
 Type: single
 Time: 40
 Explanation: Total bytes are incoming bytes plus outgoing bytes.
@@ -32,12 +32,12 @@ Explanation: Total bytes are incoming bytes plus outgoing bytes.
 
 Why does the tutorial calculate `error_rate` only when `request_count > 0`?
 
-- To avoid division by zero
 - To sort services alphabetically
 - To stop Spark
 - To remove timestamp columns
+- To avoid division by zero
 
-Answer: 1
+Answer: 4
 Type: single
 Time: 50
 Explanation: Safe division prevents errors or invalid results when the denominator is zero.
@@ -60,12 +60,12 @@ Explanation: `hour(col("event_time"))` extracts the hour value.
 
 Which function converts a timestamp into a date?
 
-- `to_date`
 - `to_folder`
+- `to_date`
 - `to_schema`
 - `to_rank`
 
-Answer: 1
+Answer: 2
 Type: single
 Time: 40
 Explanation: `to_date` extracts the date part from a timestamp.
@@ -74,12 +74,12 @@ Explanation: `to_date` extracts the date part from a timestamp.
 
 What does `when(...).otherwise(...)` help create?
 
-- Conditional values such as `latency_band`
 - A permanent database
 - A virtual environment
+- Conditional values such as `latency_band`
 - A CSV header
 
-Answer: 1
+Answer: 3
 Type: single
 Time: 50
 Explanation: `when` is used for conditional column logic.
@@ -88,12 +88,12 @@ Explanation: `when` is used for conditional column logic.
 
 Which SQL query finds total requests by hour?
 
-- `SELECT event_hour, SUM(request_count) FROM service_events_enriched GROUP BY event_hour`
 - `SELECT event_hour FROM service_events_enriched STOP BY request_count`
 - `SUM event_hour USING request_count`
 - `GROUP request_count FROM event_hour`
+- `SELECT event_hour, SUM(request_count) FROM service_events_enriched GROUP BY event_hour`
 
-Answer: 1
+Answer: 4
 Type: single
 Time: 60
 Explanation: The query groups rows by hour and sums request counts.
@@ -102,12 +102,12 @@ Explanation: The query groups rows by hour and sums request counts.
 
 Which final project feature is most similar to `event_hour`?
 
-- `trade_hour`
 - `symbol`
+- `trade_hour`
 - `close`
 - `price_range`
 
-Answer: 1
+Answer: 2
 Type: single
 Time: 45
 Explanation: Both are hour features extracted from timestamp columns.
@@ -116,12 +116,12 @@ Explanation: Both are hour features extracted from timestamp columns.
 
 Which final project feature is most similar to `latency_band`?
 
-- `candle_direction`
 - `quote_volume`
 - `open_time`
+- `candle_direction`
 - `trade_count`
 
-Answer: 1
+Answer: 3
 Type: single
 Time: 45
 Explanation: Both are category labels created from row-level conditions.
@@ -130,12 +130,12 @@ Explanation: Both are category labels created from row-level conditions.
 
 Why register `service_events_enriched` after creating derived columns?
 
-- So SQL queries can use the new columns
 - So the raw CSV is deleted
 - So Java is installed
 - So Spark no longer needs memory
+- So SQL queries can use the new columns
 
-Answer: 1
+Answer: 4
 Type: single
 Time: 50
 Explanation: Registering the enriched DataFrame lets Spark SQL query the derived columns.

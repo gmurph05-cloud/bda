@@ -4,12 +4,12 @@
 
 Why do we define an explicit schema before loading the CSV?
 
-- To control column data types instead of relying on Spark guesses
 - To delete rows before loading
+- To control column data types instead of relying on Spark guesses
 - To turn Spark into pandas
 - To create a GitHub repository
 
-Answer: 1
+Answer: 2
 Type: single
 Time: 50
 Explanation: An explicit schema helps Spark read timestamps and numeric columns correctly.
@@ -18,12 +18,12 @@ Explanation: An explicit schema helps Spark read timestamps and numeric columns 
 
 Which option tells Spark that the first CSV row contains column names?
 
-- `.option("header", True)`
 - `.option("names", False)`
 - `.option("columns", "first")`
+- `.option("header", True)`
 - `.schema("header")`
 
-Answer: 1
+Answer: 3
 Type: single
 Time: 45
 Explanation: `header=True` uses the first row as column names.
@@ -32,12 +32,12 @@ Explanation: `header=True` uses the first row as column names.
 
 Which Spark type is appropriate for `event_time`?
 
-- TimestampType
 - IntegerType
 - FolderType
 - GitType
+- TimestampType
 
-Answer: 1
+Answer: 4
 Type: single
 Time: 40
 Explanation: `TimestampType` stores date and time values.
@@ -60,12 +60,12 @@ Explanation: `printSchema` shows the DataFrame structure.
 
 Which command counts rows in the DataFrame?
 
-- `events_df.count()`
 - `events_df.rows()`
+- `events_df.count()`
 - `events_df.total_columns()`
 - `events_df.sql_count_only()`
 
-Answer: 1
+Answer: 2
 Type: single
 Time: 45
 Explanation: `count()` triggers Spark to count rows.
@@ -74,12 +74,12 @@ Explanation: `count()` triggers Spark to count rows.
 
 What does `createOrReplaceTempView("service_events")` do?
 
-- Gives the DataFrame a SQL name for the current Spark session
 - Permanently saves the table to GitHub
 - Converts the DataFrame to a Word document
+- Gives the DataFrame a SQL name for the current Spark session
 - Stops Spark
 
-Answer: 1
+Answer: 3
 Type: single
 Time: 50
 Explanation: A temporary view lets Spark SQL query the DataFrame by name.
@@ -88,12 +88,12 @@ Explanation: A temporary view lets Spark SQL query the DataFrame by name.
 
 Which query lists the distinct services?
 
-- `SELECT DISTINCT service FROM service_events`
 - `SELECT ONLY service FROM service_events`
 - `DISTINCT service IN service_events`
 - `SHOW SERVICES FROM CSV`
+- `SELECT DISTINCT service FROM service_events`
 
-Answer: 1
+Answer: 4
 Type: single
 Time: 55
 Explanation: `SELECT DISTINCT` returns unique values.
@@ -102,29 +102,29 @@ Explanation: `SELECT DISTINCT` returns unique values.
 
 What happens to a temporary view when Spark stops?
 
-- It disappears
 - It becomes a permanent database table
+- It disappears
 - It writes itself to CSV
 - It installs PySpark
 
-Answer: 1
+Answer: 2
 Type: single
 Time: 45
 Explanation: Temporary views live only inside the current Spark session.
 
 ## Question 9
 
-Which final project step is most similar to Part 1?
+Which dataset is used in Session 9 Part 1?
 
-- Loading the cleaned market CSV and checking schema, row count, and columns
-- Writing the final reflection paragraph
-- Creating the private repository
-- Running pandas sample analysis only
+- `orders.csv`
+- `Pokemon.csv`
+- `service_events.csv`
+- `Movies.json`
 
-Answer: 1
+Answer: 3
 Type: single
 Time: 55
-Explanation: The final project Spark section starts by loading and verifying the cleaned CSV.
+Explanation: Session 9 Part 1 uses the service activity log dataset named `service_events.csv`.
 
 ## Question 10
 

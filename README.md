@@ -37,6 +37,8 @@ You can also pull updates from the original repository (upstream) when new mater
   Introduction to pandas, data cleaning basics, NumPy arrays, and pandas homework practice.
 - [Session 8 README](./session8/README.md)  
   Introduction to Apache Spark with PySpark, Google Colab practice, Spark SQL analytics, and optional local Spark setup.
+- [Session 9 README](./session9/README.md)  
+  Advanced PySpark practice with CSV schemas, derived columns, time features, window rankings, and final summary outputs.
 
 ## Notes
 
